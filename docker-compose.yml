@@ -1,0 +1,7 @@
+version: "0.0"
+services:
+   webapp:
+      build: .
+      command: "npm start"
+      ports:
+         - "4010:4010"
