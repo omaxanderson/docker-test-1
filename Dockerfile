@@ -7,6 +7,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install
+RUN export TEST_ENV=max_development
 
 # Bundle that shit
 COPY . .

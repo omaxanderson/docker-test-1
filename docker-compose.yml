@@ -2,6 +2,10 @@ version: "0.0"
 services:
    webapp:
       build: .
-      command: "npm start"
       ports:
          - "4010:4010"
+      environment:
+         DOCKER_COMPOSE_TEST_ENV: production
+         MAX: hello
+      volumes:
+         - ./:/usr/src/app
